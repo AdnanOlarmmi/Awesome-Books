@@ -90,7 +90,7 @@ npx eslint .
 
 ### Author 2
 
-👤 **Anye Peter**
+👤 **Anye Peter Chende**
 
 - GitHub: [@Anyepeter](https://github.com/anyepeter)
 
