@@ -7,7 +7,7 @@ In this project, we built a basic website that allows users to add/remove books 
 - Here is the page preview
 
 <p>
- <img src="./Images/mobilePreview" />
+ <img src="./Images/mobilePreview.gif" />
 </p>
 
 
