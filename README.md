@@ -1,39 +1,26 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Technopreneurship
+# Awesome books: plain JavaScript with Objects
 
-This is a project acknowledging and affirming that I have properly understood everything learnt so far from the first module.
+In this project, we built a basic website that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We also dynamically modified the DOM and add basic events.
 
 - Here is the page preview
 
-> |     | Mobile version                      | Desktop version                      |     |
-> | --- | ----------------------------------- | ------------------------------------ | --- |
-> |     | ![Screenshot1](./images/screenshots/mobile.png) | ![Screenshot2](./images/screenshots/desktop.png) |
+<p>
+ <img src="Images/mobilePreview" />
+</p>
 
-This project is to put to test the understanding of individual student on what they've studied so far from the curriculum's module 1.
 
 > Learning objectives
 
-- I Used semantic HTML tags.
-- I Applied best practices in HTML code.
-- Used CSS selectors correctly.
-- Used CSS box model.
-- Used Flexbox to place elements on the page.
-- Demonstrated ability to create UIs adaptable to different screen sizes using media queries.
-- Used GitHub Pages to deploy web pages.
-- Applied JavaScript best practices and language style guides in code.
-- Used JavaScript to manipulate DOM elements.
-- Used JavaScript events.
-- Used objects to store and access data.
-- Communicated technical concepts to other technical people.
+- We understood different ways to create objects in JavaScript.
+- We created and accessed properties and methods of JavaScript objects.
 
 ## Built With
 
 - HTML
 - CSS
-- JAVASCRIPT
-
-Click [here](https://www.loom.com/share/1b0968f84b46450fa426ca8cf6bd0d68) to watch a walk-through description, given by me.
+- VANILLA JAVASCRIPT
 
 ## Additional Tools
 
@@ -42,9 +29,6 @@ Click [here](https://www.loom.com/share/1b0968f84b46450fa426ca8cf6bd0d68) to wat
 - ESlint
 - Node Packet Manager
 
-## Live Demo
-
-[Here](https://adnanolarmmi.github.io/Technopreneur/) is the live demo.
 
 ## Getting Started
 
@@ -64,7 +48,7 @@ To get a local copy of this project up and running on your local machine follow 
 - Clone this repository or download the Zip folder:
 
 ```
-git clone https://github.com/AdnanOlarmmi/Technopreneur.git
+git clone hhttps://github.com/AdnanOlarmmi/Awesome-Books.git
 ```
 
 - Navigate to the location of the folder in your machine:
@@ -95,13 +79,8 @@ Track JavaScript linter errors run:
 ```
 npx eslint .
 ```
-
-### Deployment
-
-- I used GitHub Pages to deploy my website
-- For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
-
 ## Author
+### Author 1
 
 👤 **Is-haq Adnan Olamilekan**
 
@@ -109,17 +88,21 @@ npx eslint .
 - Twitter: [@AdnanIs71755510](https://twitter.com/AdnanIs71755510)
 - LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
 
+### Author 2
+
+👤 **Anye Peter**
+
+- GitHub: [@Anyepeter](https://github.com/anyepeter)
+
 ## Credits
 
-- The original design ideal by [Cindy Shin in Behance](https://www.behance.net/adagio07)
-- Project from [Microverse](https://bit.ly/MicroverseTN) html & css module
+- Project from [Microverse](https://bit.ly/MicroverseTN) Javacript & Networking module (Module 2)
 - Images inspired by [Freepik](https://www.freepik.com/?_gl=1*10wse9k*test_ga*MjAwMzExMTA0OS4xNjYzNTc3NjMz*test_ga_523JXC6VL7*MTY2MzU3NzYzNS4xLjEuMTY2MzU3NzY2NC4zMS4wLjA.*fp_ga*MjAwMzExMTA0OS4xNjYzNTc3NjMz*fp_ga_1ZY8468CQB*MTY2MzU3NzYzNS4xLjEuMTY2MzU3NzY2NC4zMS4wLjA.) on [Flaticon](https://www.flaticon.com/free-icons/book-stack)
-- Topic inspired by [Khadija Hamdani](https://www.researchgate.net/publication/329972741_Knowledge_based_entrepreneurship_the_role_of_networks)
 
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/AdnanOlarmmi/Technopreneur/issues).
+Feel free to check the [issues page](https://github.com/AdnanOlarmmi/Awesome-Books/issues).
 
 ## Show your support
 
