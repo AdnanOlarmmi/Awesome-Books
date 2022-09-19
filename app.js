@@ -42,16 +42,6 @@ const addBook = () => {
   });
 };
 
-const removeBook = () => {
-  for (let i = 0; i < removeElBtn.length; i += 1) {
-    removeElBtn[i].addEventListener('click', (e) => {
-      bookList.splice(e.target.id, 1);
-      localStorage.setItem('bookList', JSON.stringify(bookList));
-      renderBooks();
-    });
-  }
-};
-
 renderBooks();
 addBook();
 removeBook();
