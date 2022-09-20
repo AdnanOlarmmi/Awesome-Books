@@ -1,20 +1,19 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome books: plain JavaScript with Objects
+# Awesome books: plain JavaScript refactoring to use JavaScript classes with Objects
 
 In this project, we built a basic website that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We also dynamically modified the DOM and add basic events.
 
 - Here is the page preview
 
 <p>
- <img src="./Images/mobilePreview.gif" />
+ <img src="Images/mobileclass.gif" />
 </p>
-
 
 > Learning objectives
 
-- We understood different ways to create objects in JavaScript.
-- We created and accessed properties and methods of JavaScript objects.
+- To use JavaScript classes.
+- To understand Javascript class methods.
 
 ## Built With
 
@@ -29,7 +28,6 @@ In this project, we built a basic website that allows users to add/remove books 
 - ESlint
 - Node Packet Manager
 
-
 ## Getting Started
 
 To get a local copy of this project up and running on your local machine follow the steps below.
@@ -38,7 +36,7 @@ To get a local copy of this project up and running on your local machine follow 
 
 - Basic html, css and medium Javascript know how.
 - Git installation
-- A text editor 
+- A text editor
 - A terminal
 - A web browser to view output e.g Google Chrome
 - An IDE e.g Visual studio code
@@ -53,7 +51,7 @@ git clone hhttps://github.com/AdnanOlarmmi/Awesome-Books.git
 
 - Navigate to the location of the folder in your machine:
 
-**``you@your-Pc-name:~$ cd <folder>``**
+**`you@your-Pc-name:~$ cd <folder>`**
 
 ### Usage
 
@@ -61,25 +59,35 @@ git clone hhttps://github.com/AdnanOlarmmi/Awesome-Books.git
 - Open the `index.html` in your browser
 
 ### Run Tests
-To track linter errors locally follow these steps:  
+
+To track linter errors locally follow these steps:
 
 Download all the dependencies run:
+
 ```
 npm install
 ```
+
 Track HTML linter errors run:
+
 ```
 npx hint .
 ```
+
 Track CSS linter errors run:
+
 ```
 npx stylelint "**/*.{css,scss}"
 ```
+
 Track JavaScript linter errors run:
+
 ```
 npx eslint .
 ```
+
 ## Author
+
 ### Author 1
 
 👤 **Is-haq Adnan Olamilekan**
