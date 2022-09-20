@@ -29,6 +29,25 @@ class Library {
     this.id = id;
   }
 
+  addBook() {
+    localStorage.setItem('bookList', JSON.stringify(bookList));
+    addElBtn.addEventListener('click', () => {
+      this.title = titleEl.value;
+      this.author = authorEl.value;
+      if (this.title && this.author) {
+        const newBook = {
+          title: this.title,
+          author: this.author,
+        };
+        bookList.push(newBook);
+        localStorage.setItem('bookList', JSON.stringify(bookList));
+        renderBooks();
+        errMsgEl.innerHTML = '';
+      } else {
+        errMsgEl.innerHTML = 'Input something';
+      }
+    });
+  }
 
   removeBook() {
     const { id } = this;
