@@ -1,3 +1,8 @@
+@font-face {
+  font-family: balsamiq;
+  src: url(fonts/BalsamiqSans-Regular.ttf);
+  font-weight: bold;
+}
 
 *,
 *::before,
@@ -5,6 +10,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: balsamiq, sans-serif;
 }
 
 html {
@@ -17,24 +23,66 @@ html {
   flex-direction: column;
 }
 
-main {
-  margin-left: 1rem;
-}
-
 .library-heading {
   margin: 1rem 0 2rem 0;
+  text-align: center;
+}
+
+.library-books {
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .library-book {
-  border-bottom: 1px solid black;
-  padding-bottom: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.3rem;
+  padding-right: 1rem;
 }
 
-form > *,
-.library-book__title {
+form a {
+  float: right;
+}
+
+.library-book a {
+  margin-left: auto;
+}
+
+.library-book .library-btn__rmv,
+form button {
+  padding: 0.1rem 0.3rem;
+  box-shadow: 3px 3px 3px black;
+}
+
+form {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 2.2rem;
+}
+
+form > * {
   margin-top: 1rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+form h2 {
+  text-align: center;
+}
+
+form h2 span {
+  border-top: 2px solid black;
+  padding-top: 1rem;
 }
 
 .errMsg {
   color: red;
+}
+
+.border-black {
+  border: 2.5px solid black;
 }
