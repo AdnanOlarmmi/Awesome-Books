@@ -22,21 +22,22 @@ const renderBooks = () => {
   libraryBooksEl.innerHTML = markup;
 };
 
-class library {
-  constructor(title, author) {
-    this.title = title,
+class Library {
+  constructor(title, author, id) {
+    this.title = title;
     this.author = author;
+    this.id = id;
   }
 
   addBook() {
     localStorage.setItem('bookList', JSON.stringify(bookList));
     addElBtn.addEventListener('click', () => {
-      const title = titleEl.value;
-      const author = authorEl.value;
-      if (title && author) {
+      this.title = titleEl.value;
+      this.author = authorEl.value;
+      if (this.title && this.author) {
         const newBook = {
-          title,
-          author,
+          title: this.title,
+          author: this.author,
         };
         bookList.push(newBook);
         localStorage.setItem('bookList', JSON.stringify(bookList));
@@ -48,23 +49,21 @@ class library {
     });
   }
 
-  removeBook () {
+  removeBook() {
+    const { id } = this;
     for (let i = 0; i < removeElBtn.length; i += 1) {
       removeElBtn[i].addEventListener('click', (e) => {
         bookList.splice(e.target.id, 1);
         localStorage.setItem('bookList', JSON.stringify(bookList));
         renderBooks();
+        return id;
       });
     }
-  };
-
+  }
 }
 
-const awsomeBooks = new library();
-
+const awsomeBooks = new Library();
 
 renderBooks();
 awsomeBooks.addBook();
 awsomeBooks.removeBook();
-
-
