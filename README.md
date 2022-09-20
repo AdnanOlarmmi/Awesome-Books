@@ -12,8 +12,8 @@ In this project, we built a basic website that allows users to add/remove books 
 
 > Learning objectives
 
-- We used JavaScript classes.
-- We understood javascript class methods.
+- To use JavaScript classes.
+- To understand Javascript class methods.
 
 ## Built With
 
