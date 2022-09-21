@@ -1,19 +1,20 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome books: plain JavaScript refactoring to use JavaScript classes with Objects
+# Awesome books: a complete website with navigation.
 
-In this project, we built a basic website that allows users to add/remove books from a list. We achieved that by using JavaScript objects and arrays. We also dynamically modified the DOM and add basic events.
+In this project, we took the Awesome books application and converted it into a fully functional website. we refactored the project to add three new sections on top of the two sections we have already completed: Books list (done), Add book form (done), a new Contact info section, a Navigation bar, and a Footer.
 
 - Here is the page preview
 
 <p>
- <img src="Images/mobileclass.gif" />
+ <img src="Images/complete-web-nav.gif" />
 </p>
 
 > Learning objectives
 
-- We used JavaScript classes.
-- We understood javascript class methods.
+- To Understand the concept of single page application.
+- To Use JavaScript to manipulate DOM elements.
+- ToUse JavaScript events.
 
 ## Built With
 
