@@ -49,16 +49,20 @@ const bookList = JSON.parse(localStorage.getItem('bookList')) || [];
 localStorage.setItem('bookList', JSON.stringify(bookList));
 
 const renderBooks = () => {
-  let markup = '';
-  JSON.parse(localStorage.getItem('bookList')).forEach((elem, index) => {
-    markup += `<div class="library-book" style="background-color: ${index % 2 && 'rgb(225, 223, 223)'}">
+  if (!bookList.length) {
+    libraryBooksEl.innerHTML = 'No books added';
+  } else {
+    let markup = '';
+    JSON.parse(localStorage.getItem('bookList')).forEach((elem, index) => {
+      markup += `<div class="library-book" style="background-color: ${index % 2 && 'rgb(225, 223, 223)'}">
       <p class="library-book__title">"${elem.title}"</p> <span> by </span>
       <p class="library-book__author">${elem.author}</p>
       
       <a href=""><button type="button" class="library-btn__rmv border-black" id=${index}>Remove</button></a>
   </div>`;
-  });
-  libraryBooksEl.innerHTML = markup;
+    });
+    libraryBooksEl.innerHTML = markup;
+  }
 };
 
 class Library {
