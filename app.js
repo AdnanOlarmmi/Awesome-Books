@@ -3,7 +3,7 @@ const addnewEl = document.querySelector('.header-addnew');
 const contactEl = document.querySelector('.header-contact');
 const date = document.querySelector('.date');
 const libraryBooksListEl = document.querySelector('.library-booklist');
-const libraryBooksEl = document.querySelector('.library-booklist__books')
+const libraryBooksEl = document.querySelector('.library-booklist__books');
 const addElBtn = document.querySelector('.library-btn__add');
 const removeElBtn = document.getElementsByClassName('library-btn__rmv');
 const contactInformationEl = document.querySelector('.contact-information');
@@ -12,41 +12,37 @@ const titleEl = document.getElementById('title');
 const authorEl = document.getElementById('author');
 const errMsgEl = document.querySelector('.errMsg');
 setInterval(() => {
-  date.innerHTML = new Date()
+  date.innerHTML = new Date();
 }, 1000);
 
-
 const toggleWindow = () => {
-    listEl.addEventListener('click', () => {
-      form.classList.remove('show');
-      contactInformationEl.classList.remove('show');
-      libraryBooksListEl.classList.remove('hide');
-      listEl.style.color = 'blue';
-      addnewEl.style.color = 'black';
-      contactEl.style.color = 'black';
-    })
+  listEl.addEventListener('click', () => {
+    form.classList.remove('show');
+    contactInformationEl.classList.remove('show');
+    libraryBooksListEl.classList.remove('hide');
+    listEl.style.color = 'blue';
+    addnewEl.style.color = 'black';
+    contactEl.style.color = 'black';
+  });
 
-        
-    addnewEl.addEventListener('click', () => {
-      form.classList.add('show');
-      contactInformationEl.classList.remove('show');
-      libraryBooksListEl.classList.add('hide');
-      listEl.style.color = 'black';
-      addnewEl.style.color = 'blue';
-      contactEl.style.color = 'black';
+  addnewEl.addEventListener('click', () => {
+    form.classList.add('show');
+    contactInformationEl.classList.remove('show');
+    libraryBooksListEl.classList.add('hide');
+    listEl.style.color = 'black';
+    addnewEl.style.color = 'blue';
+    contactEl.style.color = 'black';
+  });
 
-  }) 
-
-    contactEl.addEventListener('click', () => {
-        form.classList.remove('show');
-        contactInformationEl.classList.add('show');
-        libraryBooksListEl.classList.add('hide');
-        listEl.style.color = 'black';
-        addnewEl.style.color = 'black';
-        contactEl.style.color = 'blue';
-    })
-
-}
+  contactEl.addEventListener('click', () => {
+    form.classList.remove('show');
+    contactInformationEl.classList.add('show');
+    libraryBooksListEl.classList.add('hide');
+    listEl.style.color = 'black';
+    addnewEl.style.color = 'black';
+    contactEl.style.color = 'blue';
+  });
+};
 
 const bookList = JSON.parse(localStorage.getItem('bookList')) || [];
 
@@ -92,7 +88,6 @@ class Library {
         setTimeout(() => {
           errMsgEl.innerHTML = '';
         }, 2000);
-        
       }
     });
   }
