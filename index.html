@@ -9,20 +9,65 @@
 		<link rel="icon" type="image/x-icon" href="/Images/books.png" />
 	</head>
 	<body>
+		<header>
+			<div class="header-hero center border-black flex-row">
+				<h3 class="icon">Awesome Books</h3>
+				<ul class="nav flex-row">
+					<li class="header-list">List</li>
+					<li class="header-addnew">Add new</li>
+					<li class="header-contact">Contact</li>
+				</ul>
+			</div>
+			<p class="date"></p>
+		</header>
 		<main>
-			<h1 class="library-heading">All awesome books</h1>
-			<section class="library-books border-black">
+			<section class="library-booklist">
+				<h1 class="library-booklist__heading">All awesome books</h1>
+				<section class="library-booklist__books border-black center"></section>
+			</section>
+			<section class="contact-information center">
+				<h2>Contact Information</h3>
+				<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quas
+					expedita, accusantium natus amet beatae? Id, deserunt eius iste
+					ratione quidem cumque? Numquam omnis culpa, earum ullam expedita
+					eligendi facilis!
+					Contact Us.
+				</p>
+				<a href="https://github.com/adnanolarmmi">Is-haq, Adnan Olamilekan</a>
+				<span>and</span>
+				<a href="https://github.com/anyepeter">Anye Peter Chende</a>
 			</section>
 			<form action="">
-                <h2>A<span>dd a new </span>book</h2>
-				<input type="text" id="title" placeholder="Title" class="border-black" required />
+				<h2>A<span>dd a new </span>book</h2>
+				<input
+					type="text"
+					id="title"
+					placeholder="Title"
+					class="border-black"
+					required
+				/>
 				<br />
-				<input type="text" id="author" placeholder="Author" class="border-black" required />
-                <br>
-				<a href="index.html"><button src="#" type="button" class="library-btn__add">Add</button></a>
-                <p class="errMsg"></p>
+				<input
+					type="text"
+					id="author"
+					placeholder="Author"
+					class="border-black"
+					required
+				/>
+				<br />
+				<a href=""
+					><button src="#" type="button" class="library-btn__add">
+						Add
+					</button></a
+				>
+				<p class="errMsg"></p>
 			</form>
 		</main>
+		<footer class="center border-black flex-row">
+			<p>awesome book</p>
+			<p>&copy; some right reserverd</p>
+		</footer>
 		<script src="app.js"></script>
 	</body>
 </html>

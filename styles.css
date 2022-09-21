@@ -18,19 +18,72 @@ html {
   overflow-x: hidden;
 }
 
+li {
+  list-style: none;
+}
+
+.flex-row {
+  display: flex;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
 }
 
-.library-heading {
+.border-black {
+  border: 2.5px solid black;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+header {
+  top: 0.2rem;
+  left: 2.5vw;
+  right: 2.5vw;
+  position: fixed;
+}
+
+.header-hero,
+footer {
+  justify-content: space-between;
+  width: 95vw;
+  padding: 0.5rem;
+}
+
+.nav {
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.header-list {
+  color: blue;
+}
+
+li + li {
+  border-left: 2px solid blue;
+  padding-left: 0.5rem;
+}
+
+.date {
+  width: max-content;
+  margin-left: auto;
+  margin-top: 0.2rem;
+}
+
+main {
+  margin-top: 5rem;
+}
+
+.library-booklist__heading {
   margin: 1rem 0 2rem 0;
   text-align: center;
 }
 
-.library-books {
+.library-booklist__books {
   width: 90vw;
-  margin: 0 auto;
 }
 
 .library-book {
@@ -58,7 +111,9 @@ form button {
 form {
   width: 50vw;
   margin: 0 auto;
-  margin-top: 2.2rem;
+  margin-top: 8rem;
+  position: absolute;
+  visibility: hidden;
 }
 
 form > * {
@@ -83,6 +138,27 @@ form h2 span {
   color: red;
 }
 
-.border-black {
-  border: 2.5px solid black;
+.contact-information {
+  position: absolute;
+  visibility: hidden;
+  width: 90vw;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0.2rem;
+  left: 2.5vw;
+  right: 2.5vw;
+}
+
+.show {
+  position: static;
+  visibility: visible;
+}
+
+.hide {
+  position: absolute;
+  visibility: hidden;
 }
