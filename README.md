@@ -12,9 +12,11 @@ In this project, we took the Awesome books application and converted it into a f
 
 > Learning objectives
 
+complete-website-with-nav
 - To Understand the concept of single page application.
 - To Use JavaScript to manipulate DOM elements.
 - ToUse JavaScript events.
+
 
 ## Built With
 
@@ -28,6 +30,9 @@ In this project, we took the Awesome books application and converted it into a f
 - Stylelint
 - ESlint
 - Node Packet Manager
+
+## Live Demo
+Access the live demo [here](https://adnanolarmmi.github.io/Awesome-Books/)
 
 ## Getting Started
 
@@ -87,6 +92,11 @@ Track JavaScript linter errors run:
 npx eslint .
 ```
 
+### Deployment
+
+- I used GitHub Pages to deploy my website
+- For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
+
 ## Author
 
 ### Author 1
@@ -105,7 +115,7 @@ npx eslint .
 
 ## Credits
 
-- Project from [Microverse](https://bit.ly/MicroverseTN) Javacript & Networking module (Module 2)
+- Project from [Microverse💕](https://bit.ly/MicroverseTN) Javacript & Networking module (Module 2)
 - Images inspired by [Freepik](https://www.freepik.com/?_gl=1*10wse9k*test_ga*MjAwMzExMTA0OS4xNjYzNTc3NjMz*test_ga_523JXC6VL7*MTY2MzU3NzYzNS4xLjEuMTY2MzU3NzY2NC4zMS4wLjA.*fp_ga*MjAwMzExMTA0OS4xNjYzNTc3NjMz*fp_ga_1ZY8468CQB*MTY2MzU3NzYzNS4xLjEuMTY2MzU3NzY2NC4zMS4wLjA.) on [Flaticon](https://www.flaticon.com/free-icons/book-stack)
 
 ## Contributing
