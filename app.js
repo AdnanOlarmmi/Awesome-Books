@@ -38,43 +38,6 @@ class Library {
     libraryBooksEl.innerHTML = markup;
   }
 
-<<<<<<< HEAD
-  const removeBook = () => {
-    const removeBtnsEl = [...document.getElementsByClassName('library-btn__rmv')];
-    removeBtnsEl.forEach((item) => {
-      item.addEventListener('click', (e) => {
-        bookList.splice(e.target.id, 1);
-        localStorage.setItem('bookList', JSON.stringify(bookList));
-        renderBooks();
-      });
-    });
-  };
-  removeBook();
-};
-
-const addBook = () => {
-  addElBtn.addEventListener('click', () => {
-    const title = titleEl.value;
-    const author = authorEl.value;
-    if (title && author) {
-      const newBook = {
-        title,
-        author,
-      };
-      bookList.push(newBook);
-      localStorage.setItem('bookList', JSON.stringify(bookList));
-      renderBooks();
-      form.reset();
-      errMsgEl.innerHTML = '';
-    } else {
-      errMsgEl.innerHTML = 'Input something';
-    }
-  });
-};
-
-renderBooks();
-addBook();
-=======
   renderBooks() {
     if (!bookList.length) {
       libraryBooksEl.innerHTML = 'No books added';
@@ -108,4 +71,3 @@ const awesomeBooks = new Library();
 
 awesomeBooks.addBook();
 awesomeBooks.renderBooks();
->>>>>>> refactor-to-js-classes
