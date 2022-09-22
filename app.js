@@ -64,7 +64,7 @@ class Library {
         localStorage.setItem('bookList', JSON.stringify(bookList));
         this.renderBooks();
         form.reset();
-        errMsgEl.innerHTML = 'Book successfully added, <br> Check list.';
+        errMsgEl.innerHTML = 'Book added successfully, <br> Check list.';
         errMsgEl.style.color = 'blue';
       } else {
         errMsgEl.innerHTML = 'Input something';
@@ -72,7 +72,7 @@ class Library {
       }
       setTimeout(() => {
         errMsgEl.innerHTML = '';
-      }, 750);
+      }, 800);
     });
   }
 
