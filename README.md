@@ -7,7 +7,7 @@ In this project, we built a basic website that allows users to add/remove books 
 - Here is the page preview
 
 <p>
- <img src="Images/mobilePreview" />
+ <img src="./Images/mobilePreview.gif" />
 </p>
 
 
@@ -96,7 +96,7 @@ npx eslint .
 
 ## Credits
 
-- Project from [Microverse](https://bit.ly/MicroverseTN) Javacript & Networking module (Module 2)
+- Project from [Microverse💕](https://bit.ly/MicroverseTN) Javacript & Networking module (Module 2)
 - Images inspired by [Freepik](https://www.freepik.com/?_gl=1*10wse9k*test_ga*MjAwMzExMTA0OS4xNjYzNTc3NjMz*test_ga_523JXC6VL7*MTY2MzU3NzYzNS4xLjEuMTY2MzU3NzY2NC4zMS4wLjA.*fp_ga*MjAwMzExMTA0OS4xNjYzNTc3NjMz*fp_ga_1ZY8468CQB*MTY2MzU3NzYzNS4xLjEuMTY2MzU3NzY2NC4zMS4wLjA.) on [Flaticon](https://www.flaticon.com/free-icons/book-stack)
 
 ## Contributing
