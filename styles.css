@@ -94,18 +94,23 @@ main {
   padding-right: 1rem;
 }
 
-form a {
-  float: right;
+.library-book__title,
+.library-book__author {
+  text-transform: capitalize;
 }
 
-.library-book a {
-  margin-left: auto;
+form button {
+  float: right;
 }
 
 .library-book .library-btn__rmv,
 form button {
   padding: 0.1rem 0.3rem;
   box-shadow: 3px 3px 3px black;
+}
+
+.library-book button {
+  margin-left: auto;
 }
 
 form {

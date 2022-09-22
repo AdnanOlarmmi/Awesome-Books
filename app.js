@@ -5,7 +5,6 @@ const date = document.querySelector('.date');
 const libraryBooksListEl = document.querySelector('.library-booklist');
 const libraryBooksEl = document.querySelector('.library-booklist__books');
 const addElBtn = document.querySelector('.library-btn__add');
-const removeElBtn = document.getElementsByClassName('library-btn__rmv');
 const contactInformationEl = document.querySelector('.contact-information');
 const form = document.querySelector('form');
 const titleEl = document.getElementById('title');
@@ -46,72 +45,67 @@ const toggleWindow = () => {
 
 const bookList = JSON.parse(localStorage.getItem('bookList')) || [];
 
-localStorage.setItem('bookList', JSON.stringify(bookList));
-
-const renderBooks = () => {
-  if (!bookList.length) {
-    libraryBooksEl.innerHTML = 'No books added';
-  } else {
-    let markup = '';
-    JSON.parse(localStorage.getItem('bookList')).forEach((elem, index) => {
-      markup += `<div class="library-book" style="background-color: ${index % 2 && 'rgb(225, 223, 223)'}">
-      <p class="library-book__title">"${elem.title}"</p> <span> by </span>
-      <p class="library-book__author">${elem.author}</p>
-      
-      <a href=""><button type="button" class="library-btn__rmv border-black" id=${index}>Remove</button></a>
-  </div>`;
-    });
-    libraryBooksEl.innerHTML = markup;
-  }
-};
-
 class Library {
-  constructor(title, author, id) {
+  constructor(title, author) {
     this.title = title;
     this.author = author;
-    this.id = id;
   }
 
   addBook() {
-    localStorage.setItem('bookList', JSON.stringify(bookList));
-    addElBtn.addEventListener('click', (e) => {
-      this.title = titleEl.value;
-      this.author = authorEl.value;
-      if (this.title && this.author) {
+    addElBtn.addEventListener('click', () => {
+      const title = titleEl.value;
+      const author = authorEl.value;
+      if (title && author) {
         const newBook = {
-          title: this.title,
-          author: this.author,
+          title,
+          author,
         };
         bookList.push(newBook);
         localStorage.setItem('bookList', JSON.stringify(bookList));
-        renderBooks();
-        errMsgEl.innerHTML = '';
+        this.renderBooks();
+        form.reset();
+        errMsgEl.innerHTML = 'Book successfully added, <br> Check list.';
+        errMsgEl.style.color = 'blue';
       } else {
-        e.preventDefault();
         errMsgEl.innerHTML = 'Input something';
-        setTimeout(() => {
-          errMsgEl.innerHTML = '';
-        }, 2000);
+        errMsgEl.style.color = 'red';
       }
+      setTimeout(() => {
+        errMsgEl.innerHTML = '';
+      }, 750);
     });
   }
 
-  removeBook() {
-    const { id } = this;
-    for (let i = 0; i < removeElBtn.length; i += 1) {
-      removeElBtn[i].addEventListener('click', (e) => {
-        bookList.splice(e.target.id, 1);
-        localStorage.setItem('bookList', JSON.stringify(bookList));
-        renderBooks();
-        return id;
+  renderBooks() {
+    if (!bookList.length) {
+      libraryBooksEl.innerHTML = 'No books added';
+    } else {
+      let markup = '';
+      bookList.forEach((elem, index) => {
+        markup += `<div class="library-book" style="background-color: ${index % 2 && 'rgb(225, 223, 223)'}">
+        <p class="library-book__title">"${elem.title}"</p> <span> by </span>
+        <p class="library-book__author">${elem.author}</p>    
+        <button type="button" class="library-btn__rmv" id=${index}>Remove</button>
+    </div>`;
       });
+      libraryBooksEl.innerHTML = markup;
     }
+
+    const removeBook = () => {
+      const removeBtnsEl = [...document.getElementsByClassName('library-btn__rmv')];
+      removeBtnsEl.forEach((item) => {
+        item.addEventListener('click', (e) => {
+          bookList.splice(e.target.id, 1);
+          localStorage.setItem('bookList', JSON.stringify(bookList));
+          this.renderBooks();
+        });
+      });
+    };
+    removeBook();
   }
 }
+const awesomeBooks = new Library();
 
-const awsomeBooks = new Library();
-
-renderBooks();
-awsomeBooks.addBook();
-awsomeBooks.removeBook();
+awesomeBooks.addBook();
+awesomeBooks.renderBooks();
 toggleWindow();
