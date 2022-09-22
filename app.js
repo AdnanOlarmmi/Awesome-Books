@@ -30,10 +30,14 @@ class Library {
         localStorage.setItem('bookList', JSON.stringify(bookList));
         this.renderBooks();
         form.reset();
-        errMsgEl.innerHTML = '';
+        errMsgEl.innerHTML = 'Book added successfully, <br> Check list.';
+        errMsgEl.style.color = 'blue';
       } else {
         errMsgEl.innerHTML = 'Input something';
       }
+      setTimeout(() => {
+        errMsgEl.innerHTML = '';
+      }, 800);
     });
     libraryBooksEl.innerHTML = markup;
   }
