@@ -9,7 +9,7 @@ const contactInformationEl = document.querySelector('.contact-information');
 const form = document.querySelector('form');
 const titleEl = document.getElementById('title');
 const authorEl = document.getElementById('author');
-const errMsgEl = document.querySelector('.errMsg');
+const alertMsgEl = document.querySelector('.alertMsg');
 setInterval(() => {
   date.innerHTML = new Date();
 }, 1000);
@@ -64,15 +64,15 @@ class Library {
         localStorage.setItem('bookList', JSON.stringify(bookList));
         this.renderBooks();
         form.reset();
-        errMsgEl.innerHTML = 'Book added successfully, <br> Check list.';
-        errMsgEl.style.color = 'blue';
+        alertMsgEl.innerHTML = 'Book added successfully, <br> Check list.';
+        alertMsgEl.style.color = 'blue';
       } else {
-        errMsgEl.innerHTML = 'Input something';
-        errMsgEl.style.color = 'red';
+        alertMsgEl.innerHTML = 'Input something';
+        alertMsgEl.style.color = 'red';
       }
       setTimeout(() => {
-        errMsgEl.innerHTML = '';
-      }, 800);
+        alertMsgEl.innerHTML = '';
+      }, 1500);
     });
   }
 
