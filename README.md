@@ -34,7 +34,7 @@
 # 📖 Awesome-Books <a name="about-project"></a>
 
 
-*Awesome Books* App is an online bookshelf built with plain JavaScript.
+**Awesome Books** App is an online bookshelf built with plain JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -104,10 +104,7 @@ npm install
 To run the project, follow these instructions:
 
 - After Cloning this repo to your local machine.
-- To get it running on your default browser and local host, run:
-```
-npm start
-```
+- Open the index.html in your browser.
 
 ### Run tests
 
@@ -142,7 +139,7 @@ You can deploy this project using: GitHub Pages,
 - Twitter: [@AdnanIshaqOla](https://twitter.com/AdnanIshaqOla)
 - LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
 
-👤 **Anye Peter Chende**
+👤 **Anye Peter Chendi**
 
 - GitHub: [@anyepeter](https://github.com/anyepeter)
 - Twitter: [@anyepeter](https://twitter.com/anyepeter)
